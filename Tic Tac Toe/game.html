@@ -1,0 +1,11 @@
+import React from 'react'; import ReactDOM from 'react-dom'; import TicTacToe
+from './TicTacToe'; // Assuming your TicTacToe component is in a file named
+TicTacToe.js function App() { return (
+<div>
+  <h1>Tic Tac Toe Game</h1>
+  <TicTacToe />
+</div>
+); } ReactDOM.render(
+<React.StrictMode>
+  <App /> </React.StrictMode
+>, document.getElementById('root') );
