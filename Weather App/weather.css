@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(29, 187, 223, 0.523); */
+    background: repeating-linear-gradient(
+        rgb(18, 171, 198) 20px,
+        rgb(255, 181, 44) 60px,
+        yellow 10px
+    )
+    
+}
+.container {
+    /* max-width: 400px;
+    display:flex;
+    font-size: 10px;
+    max-height: 100px; */
+    text-align: center; 
+}
+.weather-card {
+    background-color: white;
+    border-radius: 20px;
+    padding:20px;  
+    box-shadow: green;
+    transition: transform infinite ease-in-out;
+    width: 500px;
+}
+.weather-card:hover{
+    transform:scale(1);
+}
+#city-input{
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#city-input:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+ 
+#city-input::placeholder {
+    color: Black;
+}
+#city-input-button{
+    background-color: rgb(7, 134, 64);
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#weather-info{
+    display: none;
+}
+#weather-icon{
+    width: 100px;
+    height:100px;
+}
+#temperature{
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    
+}
+#wind-speed{
+    color: grey;
+    font-size: 14px;
+
+}
+#description{
+    font-size: 20px;
+}
+#date{
+    font-size: 12px;
+    font-weight: bold;
+}
