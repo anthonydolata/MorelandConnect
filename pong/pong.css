@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, grey);
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, green);
+    border-radius: 16px;
+}
+.ball{
+    height: 25px;
+    width: 25px;
+    border-radius: 60%;
+    position: fixed;
+    top: calc(50%-15px);
+    left: calc(50%-15px);
+}
+.ball-effect{
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    animation: spinBall 0.1s linear infinite;
+    box-shadow: blue
+}
+@keyframes spinBall{
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.paddle{
+    height: 100px;
+    width: 25px;
+    border-radius:50%;
+    position: fixed;
+}
+.paddle1{
+    top:calc(7.5vh+55px);
+    left: calc(10vh+30px);
+    box-shadow: black;
+}
+.paddle2{
+    top:calc(7.5vh+55px);
+    left: calc(10vh+30px);
+    box-shadow: black;
+}
+.player1-score{
+    height:70px;
+    width:70px;
+    color: white;
+    position: fixed;
+    left:30vw;
+    margin-top: 30px;
+}
+.player2-score{
+    height:70px;
+    width:70px;
+    color: white;
+    position: fixed;
+    left:70vw;
+    margin-top: 30px;
+}
+.message{
+    position: fixed;
+    height: 10vh;
+    width: 30vw;
+    color: rgb(0, 187, 255);
+    left: 38vw;
+    margin: 30px auto auto auto;
+}
